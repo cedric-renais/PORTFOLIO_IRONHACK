@@ -96,6 +96,7 @@ section {
 .home-content p {
   font-size: 1.7rem;
   margin: 2rem 0 4rem;
+  line-height: 2.8rem;
 }
 .button-box {
   position: relative;
@@ -251,6 +252,7 @@ span {
 }
 .about-content {
   text-align: center;
+  width: 70%;
 }
 .about-content h3 {
   font-size: 2.6rem;
@@ -258,11 +260,78 @@ span {
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+  text-align: left;
+  line-height: 2.8rem;
 }
 .button-box.buttons {
   display: inline-block;
   width: 15rem;
 }
+
 .button-box.buttons a::before {
   background-color: var(--second-bg-color);
+}
+/* DESIGN SECTION */
+.design-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.design-container .design-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--second-bg-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.design-box {
+  width: 100%;
+  background-color: var(--second-bg-color);
+}
+.design-box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.design-box:hover img {
+  transform: scale(1.1);
+}
+.design-box .design-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), var(--primary-color));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+  line-height: 3rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+.design-layer h3 {
+  font-size: 3rem;
+}
+.design-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+.design-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--text-color);
+  border-radius: 50%;
+}
+.design-layer a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
+.design-box:hover .design-layer {
+  transform: translateY(0);
 }
