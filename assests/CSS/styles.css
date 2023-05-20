@@ -154,7 +154,7 @@ section {
 }
 .home-social {
   position: absolute;
-  bottom: 33%;
+  bottom: 30%;
   width: 170px;
   display: flex;
   justify-content: space-between;
