@@ -7,7 +7,7 @@
     <!--META DESCRIPTION FOR SEO-->
     <meta
       name="description"
-      content="Portfolio de Cédric Renais, développeur web et UX/UI Designer"
+      content="Portfolio de Cédric Renais, UX/UI Designer et développeur web"
     />
     <!--LINK CSS, FAVICON AND BOXICONS-->
     <link rel="stylesheet" href="./assests/CSS/styles.css" />
@@ -29,33 +29,24 @@
       <div class="bx bx-menu" id="menu-icon"></div>
       <nav class="navbar">
         <a href="#home" class="active">Accueil</a>
-        <a href="#about">A propos</a>
+        <a href="#about">à propos</a>
         <a href="#design">UX/UI</a>
         <a href="#development">Développement</a>
-        <a href="#contact">Contact</a>
+        <span class="active-nav"></span>
       </nav>
     </header>
     <!--HOME SECTION-->
     <section class="home" id="home">
       <div class="home-content">
-        <h1>Salut, je suis <span>Cédric</span></h1>
-        <div class="text-animate">
-          <h2>Web Designer</h2>
-        </div>
+        <h1>Salut, je suis<br /><span class="typed"></span></h1>
         <p>
           Acrobate de cirque reconverti et ayant toujours été attiré par le web,
           j'ai commencé par me former au développement web avec une préférence
           pour le Front-End puis à l'UX/UI Design.
         </p>
         <div class="button-box">
-          <a href="#" class="button">Projets</a>
-          <a href="#" class="button">Parlons-en</a>
+          <a href="#design" class="button">Projets</a>
         </div>
-      </div>
-      <div class="home-social">
-        <a href="#"><i class="bx bxl-medium-square"></i></a>
-        <a href="#"><i class="bx bxl-github"></i></a>
-        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
       </div>
       <div class="home-imgHover"></div>
     </section>
@@ -146,7 +137,7 @@
             <h3>UX/UI : Bien-être</h3>
             <p>
               Étude de cas appliquant les principes du "Design Thinking" et la
-              création d'un application mobile
+              création d'un prototype
             </p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
@@ -159,7 +150,7 @@
       <div class="development-container">
         <div class="development-box">
           <img
-            src="./assests/Images/reservia.jpg"
+            src="./assests/Images/reservia.png"
             alt="Une image d'illustration"
           />
           <div class="development-layer">
@@ -173,7 +164,7 @@
         </div>
         <div class="development-box">
           <img
-            src="./assests/Images/ohmyfood.jpg"
+            src="./assests/Images/ohmyfood.png"
             alt="Une image d'illustration"
           />
           <div class="development-layer">
@@ -187,7 +178,7 @@
         </div>
         <div class="development-box">
           <img
-            src="./assests/Images/chouette.jpg"
+            src="./assests/Images/chouette.png"
             alt="Une image d'illustration"
           />
           <div class="development-layer">
@@ -201,6 +192,18 @@
         </div>
       </div>
     </section>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Cédric RENAIS - <span>Web Designer</span> - 2023</p>
+        <p><a href="#" target="_blank">Mentions légales</a></p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <!--=======TYPING TEXT=======-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!--JAVASCRIPT-->
     <script src="./assests/Scripts/scripts.js"></script>
   </body>
